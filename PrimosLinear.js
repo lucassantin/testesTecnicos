@@ -26,7 +26,6 @@ function NumerosPrimos(n) {
     return primos;
 }
 
-// Chamadas de exemplo
-console.log(NumerosPrimos(2));  
-console.log(NumerosPrimos(3));  
-console.log(NumerosPrimos(10)); 
+module.exports = NumerosPrimos;
+
+

@@ -1,4 +1,4 @@
-function Fibonacci(n) {
+function FibonacciLinear(n) {
 
   // Valida se o número de entrada é um número e se é maior ou igual a zero.
   if (typeof n !== 'number' || n < 0) {
@@ -16,15 +16,10 @@ function Fibonacci(n) {
 
   // confere se o número de entrada é igual a zero e retorna o mesmo ou retorna o último número da sequência
   if (n === 0) {
-    console.log(0);
+    return 0;
   } else {
-    console.log(sequence[sequence.length - 1])
+    return sequence[sequence.length - 1]
   }
 }
-// Chamadas de exemplo
-Fibonacci(0);
-Fibonacci(1);
-Fibonacci(2);
-Fibonacci(3);
-Fibonacci(5);
-Fibonacci(6);
+
+module.exports = FibonacciLinear;

@@ -1,4 +1,4 @@
-function NumerosPrimos(n) {
+function NumerosPrimosRecursiva(n) {
     // Valida se o número de entrada é um número maior que 1
     if (typeof n !== "number" || n <= 1) {
         throw new Error("Deve ser um número maior que 1.");
@@ -27,7 +27,6 @@ function NumerosPrimos(n) {
     return gerarPrimos(2, n);
 }
 
-// Chamadas de exemplo
-console.log(NumerosPrimos(2)); 
-console.log(NumerosPrimos(3));  
-console.log(NumerosPrimos(10));
+module.exports = NumerosPrimosRecursiva
+
+
